@@ -1,0 +1,25 @@
+#name, main, version and api are required
+name: EffectUI
+main: EffectUI\Main
+version: 1.0.0
+api: 3.0.0
+
+load: POSTWORLD
+author: FlamingXO
+description: An easier way to add effects
+commands:
+  fx:
+    description: Adds effects to the player or other players
+    usage: /fx [username]
+    permission: effectui.cmd.fx
+  fxinfo:
+    description: Information on EffectUI
+    usage: /fxinfo
+    permission: effectui.cmd.fxinfo
+permissions:
+  effectui.cmd.fx:
+    description: Permissions for /fx
+    default: op
+  effectui.cmd.fxinfo:
+    description: Permissions for /fxinfo
+    default: true
