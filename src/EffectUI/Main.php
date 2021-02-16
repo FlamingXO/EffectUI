@@ -21,7 +21,6 @@ class Main extends PluginBase implements Listener{
 
 	public function onEnable(){
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-        $this->getScheduler()->scheduleRepeatingTask(new BroadcastPluginTask(), 20);
     }
 
 	public function onCommand(CommandSender $sender, Command $command, $label, array $args): bool{
